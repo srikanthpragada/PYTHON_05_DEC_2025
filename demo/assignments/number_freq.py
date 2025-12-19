@@ -1,0 +1,9 @@
+
+data = [40,50,40,30,20,20,30,40,50,50]
+
+numbers = {}
+
+for n in set(data):
+    numbers[n] = data.count(n)
+
+print(numbers)
