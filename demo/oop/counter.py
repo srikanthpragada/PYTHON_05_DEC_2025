@@ -8,12 +8,13 @@ class Counter:
     def inc(self):
         self.value += 1
 
-    def getvalue(self):
+    @property
+    def currentvalue(self):
         return self.value
 
 
 c1 = Counter()  # create an object
 c1.inc()  # call method
 c1.inc()
-print(c1.getvalue())
+print(c1.currentvalue)
 #print(c1.value)

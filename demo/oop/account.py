@@ -24,6 +24,15 @@ class Account:
     def getbalance(self):
         return self.balance
 
+    def __str__(self):
+        return f"{self.acno}, {self.customer}, {self.balance}"
+
+    def __eq__(self, other):
+        return self.acno == other.acno
+
+    def __gt__(self, other):
+        return self.balance > other.balance
+
 
 print(Account.getminbal())  # call static method
 
